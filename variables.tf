@@ -14,6 +14,10 @@ variable "log_retention_in_days" {
   description = "Number of days to retain logs"
   type        = number
   default     = 14
+  validation {
+    condition     = var.log_retention_in_days >= 0
+    error_message = "Retention period must be a non-negative integer."
+  }
 }
 
 variable "tags" {

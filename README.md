@@ -2,6 +2,10 @@
 
 Proyecto de pruebas para aprender Terraform.
 
+## Formacion
+
+- Guia de practica: [EJERCICIOS_TERRAFORM_BASICO.md](EJERCICIOS_TERRAFORM_BASICO.md)
+
 ## Estructura
 
 - `Root module` con archivos base: `main.tf`, `providers.tf`, `variables.tf`, `output.tf`
@@ -45,6 +49,22 @@ terraform apply
 
 ```powershell
 terraform destroy
+```
+
+## Tests
+
+Para ejecutar tests nativos de Terraform:
+
+```powershell
+terraform test
+```
+
+En este repositorio, el test unitario actual esta en el modulo `modules/log_group`, por lo que puedes lanzarlo asi:
+
+```powershell
+Set-Location .\modules\log_group
+terraform init
+terraform test
 ```
 
 ## Notas
