@@ -1,7 +1,7 @@
 provider "aws" {
   region  = var.aws_region
-  profile = "testing"
-}
+  profile = "default"
+} 
 
 terraform {
   backend "local" {
