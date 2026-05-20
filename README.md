@@ -76,6 +76,9 @@ terraform test
 
 Si trabajas con CMD en Windows, puedes usar el script `set-aws-profile-env.cmd` para setear variables de entorno de AWS:
 
+> [!IMPORTANT]
+> Revisa antes el script y reemplaza en `AWS_PROFILE=testing` donde corresponda
+
 ```bat
 set-aws-profile-env.cmd
 ```
