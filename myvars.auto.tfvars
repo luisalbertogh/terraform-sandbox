@@ -1,6 +1,7 @@
 aws_region            = "eu-central-1"
 log_group_name        = "/terraform-sandbox/demo-log-group"
 log_retention_in_days = 14
+bucket_name           = "my-unique-s3-bucket"
 
 tags = {
   Project     = "terraform-sandbox"

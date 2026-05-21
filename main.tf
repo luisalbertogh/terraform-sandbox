@@ -17,3 +17,9 @@ module "log_group" {
   retention_in_days = var.log_retention_in_days
   tags              = var.tags
 }
+
+module "s3_bucket" {
+  source = "./modules/s3"
+
+  bucket_name = var.bucket_name
+}
