@@ -17,8 +17,3 @@ module "log_group" {
   retention_in_days = var.log_retention_in_days
   tags              = var.tags
 }
-
-# Existing API Gateway CloudWatch Log Group.
-data "aws_cloudwatch_log_group" "apigateway_welcome" {
-  name = "/aws/apigateway/welcome"
-}
