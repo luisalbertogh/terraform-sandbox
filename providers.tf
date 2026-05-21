@@ -16,6 +16,7 @@ provider "aws" {
   s3_use_path_style           = true # required for path-style S3 URLs with Floci
 
   endpoints {
+    apigateway = "http://localhost:4566"
     cloudwatch = "http://localhost:4566"
     iam        = "http://localhost:4566"
     lambda     = "http://localhost:4566"
